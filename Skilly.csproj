@@ -47,7 +47,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Settings.cs" />
-    <Compile Include="SkillyCore.cs" />
+    <Compile Include="Skilly.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="System" />
