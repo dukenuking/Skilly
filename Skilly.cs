@@ -34,7 +34,6 @@ namespace Skilly
         private bool SkillReady(string skillname)
         {
             //todo: add actual usage based on expired buff & cooldown or im to dumb to find it
-            // DebugWindow.LogMsg("in check");
             return !GameController.Player.GetComponent<Actor>().ActorSkills.Find(s => s.Name.Contains(skillname))
                 .IsUsing;
         }
@@ -60,9 +59,7 @@ namespace Skilly
 
             if (skillList.Count <= 0) return;
             Settings.SkillList.SetListValues(skillList);
-            Settings.SkillList.Value = Settings.SkillList.Values.FirstOrDefault();
         }
-
         private void CastSkill()
         {
             //default constant delay 10ms?
